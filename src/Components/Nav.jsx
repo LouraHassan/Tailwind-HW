@@ -1,11 +1,9 @@
 import React from "react";
 import logo from "../assets/food-blogger-site-logo.svg";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-
 function Nav() {
   return (
     <>
@@ -61,7 +59,6 @@ function Nav() {
               <path d="M4 18l16 0" />
             </svg>
           </label>
-
           {/* Put this part before </body> tag */}
           <input type="checkbox" id="navListSm" className="modal-toggle" />
           <div className="modal z-20">
@@ -71,7 +68,6 @@ function Nav() {
               <p className="my-6 hover:text-[#BE7C68]">Reviews</p>
               <p className="my-6 hover:text-[#BE7C68]">Videos</p>
               <p className="my-6 hover:text-[#BE7C68]">Contact</p>
-
               <div className="modal-action">
                 <label
                   htmlFor="navListSm"
@@ -87,5 +83,4 @@ function Nav() {
     </>
   );
 }
-
 export default Nav;

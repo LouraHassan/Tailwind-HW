@@ -1,5 +1,4 @@
 import React from "react";
-
 function FoodCard(props) {
   let review = "hidden";
   if (props.review) {
@@ -21,8 +20,7 @@ function FoodCard(props) {
           stroke-width="1"
           stroke-linecap="round"
           stroke-linejoin="round"
-          className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right mx-1 hover:stroke-black"
-        >
+          className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right mx-1 hover:stroke-black">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M5 12l14 0" />
           <path d="M15 16l4 -4" />
@@ -32,5 +30,4 @@ function FoodCard(props) {
     </div>
   );
 }
-
 export default FoodCard;

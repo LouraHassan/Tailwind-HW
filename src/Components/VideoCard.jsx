@@ -1,5 +1,4 @@
 import React from 'react'
-
 function VideoCard(props) {
   return (
     <div className='flex mb-10 max-md:flex-col font-Montserrat'>
@@ -7,10 +6,8 @@ function VideoCard(props) {
           <div className='mx-5 max-md:mx-0'>
               <p className='text-xl font-semibold max-sm:text-lg'>{props.title}</p>
               <p className='text-[#707c84]'>{props.text}</p>
-
           </div>
     </div>
   )
 }
-
 export default VideoCard

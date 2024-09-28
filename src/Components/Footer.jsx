@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-
 function Footer() {
   return (
     <footer className="py-10">
@@ -30,5 +29,4 @@ function Footer() {
     </footer>
   );
 }
-
 export default Footer;

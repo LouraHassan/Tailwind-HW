@@ -4,17 +4,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="py-10">
       <div className="flex justify-around p-10 max-md:flex-col max-md:items-center max-sm:p-5">
         <img className="max-md:w-[10%] max-sm:w-[30%]" src={logo} alt="" />
         <ul className="menu menu-horizontal tracking-widest transition duration-150 ease-out hover:ease-in cursor-pointer max-md:my-10 justify-center font-Montserrat">
-          <li className="m-4 hover:text-[#BE7C68]">Home</li>
-          <li className="m-4 hover:text-[#BE7C68]">About</li>
-          <li className="m-4 hover:text-[#BE7C68]">Reviews</li>
-          <li className="m-4 hover:text-[#BE7C68]">Videos</li>
-          <li className="m-4 hover:text-[#BE7C68]">Contact</li>
+          <Link to='/' className="m-4 hover:text-[#BE7C68]">Home</Link>
+          <Link to='/about' className="m-4 hover:text-[#BE7C68]">About</Link>
+          <Link className="m-4 hover:text-[#BE7C68]">Reviews</Link>
+          <Link className="m-4 hover:text-[#BE7C68]">Videos</Link>
+          <Link to='/contact' className="m-4 hover:text-[#BE7C68]">Contact</Link>
         </ul>
         <div className="text-[#BE7C68] cursor-pointer text-xl">
           <FontAwesomeIcon icon={faYoutube} className="hover:text-slate-700 mx-4"/>

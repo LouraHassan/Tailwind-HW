@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "../assets/food-blogger-site-logo.svg";
+import { Link } from "react-router-dom";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -11,11 +13,11 @@ function Nav() {
         <div className="navbar-start">
           <img src={logo} alt="" />
           <ul className="menu menu-horizontal px-1 hidden lg:flex font-bold tracking-widest uppercase cursor-pointer text-xs mx-5 text-gray-900 font-Montserrat">
-            <li className="mx-3 text-[#BE7C68]">Home</li>
-            <li className="mx-3 hover:text-[#BE7C68]">About</li>
-            <li className="mx-3 hover:text-[#BE7C68]">Reviews</li>
-            <li className="mx-3 hover:text-[#BE7C68]">Videos</li>
-            <li className="mx-3 hover:text-[#BE7C68]">Contact</li>
+            <Link to='/' className="mx-3 text-[#BE7C68]">Home</Link>
+            <Link to='/about' className="mx-3 hover:text-[#BE7C68]">About</Link>
+            <Link className="mx-3 hover:text-[#BE7C68]">Reviews</Link>
+            <Link className="mx-3 hover:text-[#BE7C68]">Videos</Link>
+            <Link to='/contact' className="mx-3 hover:text-[#BE7C68]">Contact</Link>
           </ul>
         </div>
         <div className="navbar-center hidden lg:flex"></div>
@@ -63,11 +65,11 @@ function Nav() {
           <input type="checkbox" id="navListSm" className="modal-toggle" />
           <div className="modal z-20">
             <div className="bg-white w-full h-screen flex flex-col items-center justify-center text-2xl tracking-widest cursor-pointer font-Montserrat">
-              <p className="my-6 hover:text-[#BE7C68]">Home</p>
-              <p className="my-6 hover:text-[#BE7C68]">About</p>
-              <p className="my-6 hover:text-[#BE7C68]">Reviews</p>
-              <p className="my-6 hover:text-[#BE7C68]">Videos</p>
-              <p className="my-6 hover:text-[#BE7C68]">Contact</p>
+              <Link to='/' className="my-6 hover:text-[#BE7C68]">Home</Link>
+              <Link to='/about'  className="my-6 hover:text-[#BE7C68]">About</Link>
+              <Link className="my-6 hover:text-[#BE7C68]">Reviews</Link>
+              <Link className="my-6 hover:text-[#BE7C68]">Videos</Link>
+              <Link to='/contact' className="my-6 hover:text-[#BE7C68]">Contact</Link>
               <div className="modal-action">
                 <label
                   htmlFor="navListSm"
